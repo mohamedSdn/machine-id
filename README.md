@@ -1,4 +1,4 @@
-# Create .exe to quickly get a machine's unique Id (Uses [node-machine-id](https://github.com/automation-stack/node-machine-id) and [Node's SEA feature](https://nodejs.org/api/single-executable-applications.html))
+# Create a .exe to quickly get a machine's unique Id (Uses [node-machine-id](https://github.com/automation-stack/node-machine-id) and [Node's SEA feature](https://nodejs.org/api/single-executable-applications.html))
 
 ## Steps
 
@@ -10,4 +10,4 @@
 - Run: `node -e "require('fs').copyFileSync(process.execPath, 'machine-id.exe')"`.
 - Run `npx postject machine-id.exe NODE_SEA_BLOB sea-prep.blob --sentinel-fuse NODE_SEA_FUSE_fce680ab2cc467b6e072b8b5df1996b2`.
 
-Now the exe file should be generated and ready to be used.
+Now the .exe file should be generated and ready to be used.
