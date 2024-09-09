@@ -3,6 +3,8 @@
 ## Steps
 
 - Compile index.js using your favorive build tool (esbuild, webpack...).
+  
+    > example using esbuild: `.\node_modules\.bin\esbuild index.js --bundle --outfile=machine-id.js --platform=node`
 - Tweak sea-config.json based on your needs.
 - Run: `node --experimental-sea-config sea-config.json`.
 - Run: `node -e "require('fs').copyFileSync(process.execPath, 'machine-id.exe')"`.
